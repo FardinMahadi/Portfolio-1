@@ -1,0 +1,115 @@
+/*   Media query for responsiveness   */
+/*   All media query will be there    */
+
+/* this is for tabs */
+@media only screen and (max-width: 1000px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigation {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .logo {
+    margin: 0 0 0 1.5rem;
+  }
+
+  .center {
+    width: auto;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  ul {
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  ul li {
+    margin: 1rem;
+  }
+
+  .navigation .center li a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main {
+    height: 89vh;
+  }
+}
+
+/*   Media query for mobile phone  */
+
+@media only screen and (max-width: 750px){
+  .main{
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    margin: 3rem 0;
+  }
+
+  .logo-box{
+    height: auto;
+    width: 100vw;
+  }
+
+  .logo{
+    margin: 0 0 0 1.5rem;
+  }
+
+  .center{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  ul{
+    margin: 0;
+  }
+
+  ul li{
+    margin: 1rem;
+  }
+
+  ul li a{
+    font-size: 1.2rem;
+  }
+
+  ul li a ion-icon{
+    margin: 0;
+  }
+
+  .main .text{
+    margin-top: 3rem;
+    padding: 2rem;
+    border: 2px solid;
+    border-radius: 5rem 0 0 0;
+    box-shadow:  0.8rem 1rem black;
+  }
+}

@@ -1,0 +1,160 @@
+/*    all fonts     */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
+
+/* global variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  text-decoration: none;
+}
+
+/*      making body as flex      */
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/*       navigation bar      */
+
+.navigation {
+  height: 100vh;
+  width: 40vw;
+  background-image: linear-gradient(to bottom right, #56ff8e, #049122);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-box {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  transition: 0.5s ease-in-out;
+  font-family: "bagel fat one", "poppins", sans-serif;
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+
+.logo:hover {
+  font-size: 3.2rem;
+  color: rgb(44, 44, 44);
+  transform: rotateZ(-5deg);
+}
+
+.center {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 3em;
+}
+
+.center nav ul {
+  list-style: none;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+ul li:hover {
+  transform: rotateZ(5deg);
+}
+
+ul li a {
+  color: black;
+}
+
+/*         main section       */
+
+main {
+  width: auto;
+  background-image: linear-gradient(to bottom right, #5aff15, #005a09);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .text {
+  /* height: 20vh; */
+  margin: 0 7vw;
+}
+
+.main .text h1 {
+  font-size: 3.2rem;
+}
+
+.main .text p {
+  font-size: 1.2rem;
+}
+
+.main .img img {
+  margin: 0 10vw 0 5vw;
+  height: 20rem;
+  transition: 0.5s ease-in-out;
+}
+
+.main .img img:hover {
+  height: 18rem;
+  /* transform: scaleX(-1); */
+}
+
+ion-icon {
+  margin-right: 0.5rem;
+}
+
+.color {
+  color: rgb(165, 0, 165);
+  font-family: "dancing script", "poppins", sans-serif;
+  font-size: 3.2rem;
+  margin: 0 0 0 1.5rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.color:hover {
+  color: black;
+  font-size: 3.5rem;
+  text-decoration: none;
+}
+
+/*    social icons    */
+
+.social {
+  float: bottom;
+  margin-bottom: 1rem;
+}
+
+.social a ion-icon {
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  transition: 0.3s ease-in-out;
+}
+
+.social a ion-icon:hover {
+  color: rgb(73, 0, 95);
+  font-size: 1.5rem;
+}
